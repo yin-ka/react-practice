@@ -1,15 +1,22 @@
-import Header from './Header';
-import Speech from './Speech';
+import Product from './Product';
 const App = ({props}) => {
-  const title = 'practice';
-  const title1 = 'Hello';
-  const soe = 'mine';
     return (
     <div className="App">
-      <Header title={title} />
-      <Header title={title1} />
-      <Speech soe={soe}/>
-      <Header />
+      <Product
+      name = "Google Home"
+      description = "Your AI assistant"
+      price={59.99}
+      />
+      <Product
+      name = "Iphone 12 Pro max"
+      description = "The best iphone "
+      price={1200}
+      />
+      <Product
+      name = "Macbook"
+      description = "Your favourite computer"
+      price={2500}
+      />
     </div>
   );
 };
